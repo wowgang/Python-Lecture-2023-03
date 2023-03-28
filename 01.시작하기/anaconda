@@ -1,0 +1,28 @@
+
+
+anaconda3 path add못했다면
+윈도우설정-정보-고급시스템설정-고급-환경변수-Path-편집-새로만들기
+새로만들기에 경로 복사해서 하나씩 붙여 넣어주기 
+위치도 이대로 맞춰서 하기 
+
+C:\Users\YONSAI\anaconda3
+C:\Users\YONSAI\anaconda3\Library\mingw-w64\bin
+C:\Users\YONSAI\anaconda3\Library\usr\bin
+C:\Users\YONSAI\anaconda3\Library\bin
+C:\Users\YONSAI\anaconda3\Scripts
+
+
+
+명령프롬프트에서 
+< conda activate base -> base 가상환경 만들어줌
+
+< conda env list
+>
+# conda environments:
+#
+base                  *  C:\Users\YONSAI\anaconda3
+
+
+Anaconda Powershell Prompt도있다
+거기는 이미 base로 시작
+(base) PS C:\Users\YONSAI>
