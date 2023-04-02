@@ -1,0 +1,53 @@
+f = open("새파일.txt", 'w')
+f.close()
+
+파일열기모드 /설명
+r / 읽기모드
+w / 쓰기모드
+a / 추가모드 - 파일의 마지막에 새로운 내용으 추가 시킬 때 사용
+
+절대주소 : 처음부터(C:/)부터 주소를 써주는것
+상대주소 : 현재 실행하는 파일을 기준으로 상대적인 경로를 써주는 것
+
+
+f = open("C:/Python/새파일.txt", 'w', encoding="UTF-8")
+for i in range(1,11):
+    data = "%d번째 줄입니다. \n" % i
+    f.write(data)
+f.close() # 파일 open후 항상 close하기
+
+
+f = open("새파일.txt", 'r', encoding="UTF-8")
+line = f.readline()  # readline 한줄씩 읽어오는 함수
+print(line)
+f.close()
+
+
+f = open("새파일.txt", 'r', encoding="UTF-8")
+while True:
+    line = f.readline()  # readline 한줄씩 읽어오는 함수
+    if not line: break  # not 붙이면 false로 인식
+    print(line)
+f.close()
+
+
+f = open("새파일.txt", 'r', encoding="UTF-8")
+data = f.read()  # 모든걸 읽어서 통째로 가져옴
+print(data)
+f.close()
+
+
+f = open("새파일.txt", 'a', encoding="UTF-8")  # 뒤에 내용을 추가하겠다.
+for i in range(11, 20):
+    data = "%d번째 줄입니다. \n" % i
+    f.write(data)
+f.close()
+
+
+
+# with A ~ as B  >> 파일을 열어서 B라는 변수에 저장한다. 
+with open("foo.txt", "w") as f: # 별도의 close없어도됨 함수처럼 with내에서만 파일을 사용하기때문
+    f.write("Life is too short, you need python")
+
+
+
