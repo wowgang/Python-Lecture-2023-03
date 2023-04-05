@@ -1,0 +1,31 @@
+어플리케이션 만들기
+
+cmd실행
+<입력
+
+<pip install pyinstaller
+<conda remove pathlib
+>>>Proceed ([y]/n)? < y
+<pip install pywin32-ctypes
+<pyinstaller --onefile WordCount.py
+<dist\WordCount 	
+
+
+#dist\WordCount.exe 실행할때 data를 찾을수있는 상위 폴더 위치에서 실행을 해야함 05.함수처럼
+
+# <pyinstaller --onefile WordCount.py 
+WordCount.py 바뀌면 위에말로 다시 돌리기
+<dist\WordCount data\lorem.txt
+data\파일명
+
+(base) D:\Workspace\02.Python\05.함수\dist>WordCount.exe ..\data\alice.txt
+
+이제 dist에있는 WordCount가 실행파일됨
+실행하고 data\파일명 해주면 어떤 파일이든 바로 실행가능
+
+dist\WordCount.exe data\파일명 입력하면 이제 어떤 파일이든 바로 실행가능
+
+ex)
+dist\WordCount.exe data\alice.txt
+
+(base) D:\Workspace\02.Python\05.함수>dist\WordCount.exe data\alice.txt
