@@ -10,7 +10,7 @@ def create_account(account):
         return   
     now = dt.datetime.now()
     ano = now.strftime('%H%M%S')
-    account.append({'계좌번호': ano, '소유주': name, '잔액': amount })
+    account.append({'계좌번호': ano, '소유주': name, '잔액': amount})
     return
 
 
@@ -25,7 +25,7 @@ def deposit(account):
     for acc in account: # acc는 딕셔너리 {'계좌번호': '142603', '소유주':' 홍길동', '잔액': 10000 }
         if ano == acc['계좌번호']:
             acc['잔액'] += amount
-            return 
+            return
 
 #  계좌번호와 금액을 입력으로 받아서 계좌의 금액을 인출
 def withdraw(account):
@@ -42,4 +42,6 @@ def withdraw(account):
             else: 
                 acc['잔액'] -= amount
             return
+        
+
             
