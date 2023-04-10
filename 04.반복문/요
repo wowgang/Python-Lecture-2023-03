@@ -1,0 +1,13 @@
+리스트 list [ ] 대괄호 => 순서O , 중복O , 수정O , 삭제O 
+
+튜플 tuple ( ) 소괄호 , 괄호 없음 => 순서O , 중복O , 수정X , 삭제X 
+
+딕셔너리 dict { key : value } => 순서X , 중복X , 수정O , 삭제O 
+
+셋 set { } 중괄호 , set([ ]) => 순서X , 중복X , 수정O , 삭제O 
+
+
+odd_sq_list = [i*i for i in range(start,stop+1) if i % 2 == 1]   
+# i값을 어떻게 넣을지 앞에 놓고 뒤에는 i의 법위와 i의 조건
+odd_sq_list
+# 리스트이름 = [표현식 for 반복문 in 반복할수 있는것 if 조건문]
